@@ -1,5 +1,7 @@
 console.clear();
 
+// TODO include playback state "none"
+
 // set up a faux status - to mimic what a UA would implement
 const statusEl = document.querySelector('#status');
 
@@ -210,9 +212,6 @@ const actionHandlers = [
   ],
   // NB there is also a 'skipad' action
 ];
-
-// TODO play next track when the previous has finished
-// TODO update playback state in certain actions
 
 for (const [action, handler] of actionHandlers) {
   try {
